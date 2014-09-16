@@ -7,11 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "MapLoadViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    CGRect viewRect=[[UIScreen mainScreen] bounds];
+    self.window=[[UIWindow alloc] initWithFrame:viewRect];
+    
+    MapLoadViewController *mapLoadViewController=[[MapLoadViewController alloc] init];
+    self.window.rootViewController=mapLoadViewController;
+    [self.window makeKeyAndVisible];
+    
+    return YES;
+    
     // Override point for customization after application launch.
     return YES;
 }
