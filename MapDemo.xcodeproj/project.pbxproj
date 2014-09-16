@@ -14,13 +14,15 @@
 		FAA44CC919C89BF000D11C1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA44CC819C89BF000D11C1D /* main.m */; };
 		FAA44CCD19C89BF000D11C1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA44CCC19C89BF000D11C1D /* AppDelegate.m */; };
 		FAA44CD019C89BF000D11C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA44CCE19C89BF000D11C1D /* Main.storyboard */; };
-		FAA44CD319C89BF000D11C1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA44CD219C89BF000D11C1D /* ViewController.m */; };
 		FAA44CD519C89BF000D11C1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA44CD419C89BF000D11C1D /* Images.xcassets */; };
 		FAA44CDC19C89BF000D11C1D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA44CDB19C89BF000D11C1D /* XCTest.framework */; };
 		FAA44CDD19C89BF000D11C1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA44CBC19C89BF000D11C1D /* Foundation.framework */; };
 		FAA44CDE19C89BF000D11C1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA44CC019C89BF000D11C1D /* UIKit.framework */; };
 		FAA44CE619C89BF000D11C1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAA44CE419C89BF000D11C1D /* InfoPlist.strings */; };
 		FAA44CE819C89BF000D11C1D /* MapDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA44CE719C89BF000D11C1D /* MapDemoTests.m */; };
+		FAA44CF219C89D1B00D11C1D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA44CF119C89D1B00D11C1D /* MapKit.framework */; };
+		FAA44CF419C89D4700D11C1D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA44CF319C89D4700D11C1D /* CoreLocation.framework */; };
+		FAA44CF719C89EA100D11C1D /* MapLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA44CF619C89EA100D11C1D /* MapLoadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,16 @@
 		FAA44CCB19C89BF000D11C1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAA44CCC19C89BF000D11C1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FAA44CCF19C89BF000D11C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FAA44CD119C89BF000D11C1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FAA44CD219C89BF000D11C1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FAA44CD419C89BF000D11C1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAA44CDA19C89BF000D11C1D /* MapDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA44CDB19C89BF000D11C1D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FAA44CE319C89BF000D11C1D /* MapDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapDemoTests-Info.plist"; sourceTree = "<group>"; };
 		FAA44CE519C89BF000D11C1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAA44CE719C89BF000D11C1D /* MapDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapDemoTests.m; sourceTree = "<group>"; };
+		FAA44CF119C89D1B00D11C1D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FAA44CF319C89D4700D11C1D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FAA44CF519C89EA100D11C1D /* MapLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapLoadViewController.h; path = ../MapLoadViewController.h; sourceTree = "<group>"; };
+		FAA44CF619C89EA100D11C1D /* MapLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapLoadViewController.m; path = ../MapLoadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA44CF419C89D4700D11C1D /* CoreLocation.framework in Frameworks */,
+				FAA44CF219C89D1B00D11C1D /* MapKit.framework in Frameworks */,
 				FAA44CBF19C89BF000D11C1D /* CoreGraphics.framework in Frameworks */,
 				FAA44CC119C89BF000D11C1D /* UIKit.framework in Frameworks */,
 				FAA44CBD19C89BF000D11C1D /* Foundation.framework in Frameworks */,
@@ -101,6 +107,8 @@
 		FAA44CBB19C89BF000D11C1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAA44CF319C89D4700D11C1D /* CoreLocation.framework */,
+				FAA44CF119C89D1B00D11C1D /* MapKit.framework */,
 				FAA44CBC19C89BF000D11C1D /* Foundation.framework */,
 				FAA44CBE19C89BF000D11C1D /* CoreGraphics.framework */,
 				FAA44CC019C89BF000D11C1D /* UIKit.framework */,
@@ -112,11 +120,11 @@
 		FAA44CC219C89BF000D11C1D /* MapDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FAA44CF519C89EA100D11C1D /* MapLoadViewController.h */,
+				FAA44CF619C89EA100D11C1D /* MapLoadViewController.m */,
 				FAA44CCB19C89BF000D11C1D /* AppDelegate.h */,
 				FAA44CCC19C89BF000D11C1D /* AppDelegate.m */,
 				FAA44CCE19C89BF000D11C1D /* Main.storyboard */,
-				FAA44CD119C89BF000D11C1D /* ViewController.h */,
-				FAA44CD219C89BF000D11C1D /* ViewController.m */,
 				FAA44CD419C89BF000D11C1D /* Images.xcassets */,
 				FAA44CC319C89BF000D11C1D /* Supporting Files */,
 			);
@@ -249,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA44CD319C89BF000D11C1D /* ViewController.m in Sources */,
+				FAA44CF719C89EA100D11C1D /* MapLoadViewController.m in Sources */,
 				FAA44CCD19C89BF000D11C1D /* AppDelegate.m in Sources */,
 				FAA44CC919C89BF000D11C1D /* main.m in Sources */,
 			);
